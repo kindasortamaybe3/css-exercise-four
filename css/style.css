@@ -1,104 +1,77 @@
 * {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
   background-color: green;
   font-family: normal;
   font-size: 1em;
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
+  flex-flow: wrap;
 }
 
+/* the stuff contained... yes... */
 .container {
   background-color: red;
   text-align: center;
+  margin: 0 auto;
 }
 
-.menu {
-  padding: 1px;
-  margin-bottom: 1px;
-  background-color :#33b5e5;
-}
-
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-  width: 100%;
-}
-
-#header {
-  background-color: #c9c9c9;
-  padding: 5%; /*try to combo this with .content
-  position: sticky;*/
-  top: 0;
+.container > h1 {
   font-family: 'Open Sans Serif', sans-serif;
+  background-color: blue;
+  padding: 1em;
   text-transform: uppercase;
-  width: 100%;
 }
-
-.content {
-  display: inline-block;
-}
-
-
-
-h1 {
-  display: block;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  text-align: center;
-}
-
-img {
-  max-width: 100%;
-  }
 
 /* TEXT IN IMAGES */
 .preview {
-  height: 300px;
+  height: 200px;
   display: inline-block;
   width: 100%;
   background-size: cover;
-  margin: 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 1em;
 }
 
+/* IMAGES */
 .baku {
-background-image: url("../images/baku.jpg")
+  background-image: url("../images/baku.jpg")
 }
 
 .london {
-background-image: url("../images/london.png")
+  background-image: url("../images/london.png")
 }
 
 .madrid {
-background-image: url("../images/madrid.jpg")
+  background-image: url("../images/madrid.jpg")
 }
 
 .rome {
-background-image: url("../images/rome.jpg")
+  background-image: url("../images/rome.jpg")
 }
+/*
 
-
-.top-left {
-    position: absolute;
-    top: 6px;
-    left: 6px
+@media (min-width: 48.125em)
+.journal_grid li .journal_link_contain {
+    min-height: 29.4375em;
 }
-
-@media only screen and (min-width: 600px) {
-  .preview {
-    width: 45%;
-  }
-}
+@media (min-width: 37.5em)
+.journal_grid li .journal_link_contain {
+    padding: 8.5em 2em 5em;
+    min-height: 26.625em;
+}*/
 
 @media only screen and (min-width: 768px) {
   .preview {
     width:20%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .preview {
+    width: 45%;
   }
 }
 /*
