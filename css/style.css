@@ -1,3 +1,105 @@
+/*   box-sizing: inherit;
+}
+
+body {
+  background-color: green;
+  font-family: normal;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.container {
+  background-color: red;
+  text-align: center;
+}
+
+.menu {
+  padding: 1px;
+  margin-bottom: 1px;
+  background-color :#33b5e5;
+}
+
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+#header {
+  background-color: #c9c9c9;
+  padding: 5%;
+  top: 0;
+  font-family: 'Open Sans Serif', sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.content {
+  display: inline-block;
+}
+
+
+
+h1 {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  }
+
+/* TEXT IN IMAGES *//*
+.preview {
+  height: 300px;
+  display: inline-block;
+  width: 100%;
+  background-size: cover;
+  margin: 10px;
+}
+
+.baku {
+background-image: url("../images/baku.jpg")
+}
+
+.london {
+background-image: url("../images/london.png")
+}
+
+.madrid {
+background-image: url("../images/madrid.jpg")
+}
+
+.rome {
+background-image: url("../images/rome.jpg")
+}
+
+
+.top-left {
+    position: absolute;
+    top: 6px;
+    left: 6px
+}
+
+@media only screen and (min-width: 600px) {
+  .preview {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .preview {
+    width:20%;
+  }
+}
+ */
 * {
   box-sizing: border-box;
 }
@@ -14,12 +116,13 @@ body {
   background-color: red;
   text-align: center;
   margin: 0 auto;
+  width: 100%;
 }
 
 .container > h1 {
   font-family: 'Open Sans Serif', sans-serif;
   background-color: blue;
-  padding: 1em;
+  padding: 3em;
   text-transform: uppercase;
 }
 
@@ -27,7 +130,7 @@ body {
 .preview {
   height: 200px;
   display: inline-block;
-  width: 100%;
+  /*width: 100%;*/
   background-size: cover;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -51,278 +154,39 @@ body {
 .rome {
   background-image: url("../images/rome.jpg")
 }
-/*
 
-@media (min-width: 48.125em)
-.journal_grid li .journal_link_contain {
-    min-height: 29.4375em;
-}
-@media (min-width: 37.5em)
-.journal_grid li .journal_link_contain {
-    padding: 8.5em 2em 5em;
-    min-height: 26.625em;
-}*/
-
-@media only screen and (min-width: 768px) {
-  .preview {
-    width:20%;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  .preview {
-    width: 45%;
-  }
-}
-/*
-
-position: relative;
-text-align: left;
-color: black;
-margin-block-end: 1em;
-
-
-
-For mobile phones: *
-[class*="col-"] {
-  width: 100%;
-}
-
-[class*="col-"] {
-  padding: 15px;
-}*/
-/*
-@media only screen and (min-width: 420px) {
-  /* For tablets: */
-/*  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 420px) {
-  /* For desktop: */
-/*  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 600px) {
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 768px) {
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-/*
-
-display:flex;
-justify-content: flex-start;
-flex-flow: column-wrap;
-FOR WHEN SCREEN IS SMALL
-
-display: flex;
-justify-content: flex-start;
-align-items: flex-start;
-flex-flow: column wrap;
-
-FOR WHEN SCREEN IS EXPANDED
-align-content: center;
-display: flex;
-justify-content: space-between;
-align-items: flex-end;
-flex-flow: row-reverse wrap;
-
-/**
-.cities-container {
-  background-color: #c8c8c8;
-  margin: 10px; /* created gap from sides
-  width: 220px;
-  max-width: 700px;
-}
-
-places {
-    padding: 1em;
-    margin-bottom: 5em;
-    color: black;
-}
-
-
-
-.content {
-  display: inline-block;
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-}
-
-/* For mobile phones:
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  /* For desktop:
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-
-/* For desktop:
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones:
-  [class*="col-"] {
+/* iphone */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .preview {
     width: 100%;
+    flex-flow: column;
   }
 }
 
-/*
-
-
-  h1:only-child {
-  background: green;
-  padding: 5%;
-  position: sticky;
-  top: 0;
-  font-family: 'Open Sans Serif', sans-serif;
-  text-transform: uppercase;
-  display: inline-block;
-  width: 100%;
+/* ipad */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  .preview {
+  width: 40%;
+  flex-flow: row;
+  }
 }
 
-/*.emphasis {
-  position: absolute;
-  width: 100%
-  padding: 5%;
+
+/* ----------- Retina Screens ----------- 
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+    .preview {
 }
 
-/*
-h1 :: before {
-  span:
-  padding: 5%;
-  font-family: serif;
-}
-*/
-
-
-
-/* <body>
-  <section class="container">
-    <h1 id="titles">Modern luxury <span class="emphasis">travel</span></h1>
-    <div class="preview baku">
-      <img src="images/baku.jpg" alt "backu">
-      <h1>Baku</h1>
-    </div>
-    <div class="preview london">
-      <img src="images/london.png" alt "london">
-      <h1>London</h1>
-    </div>
-    <div class="preview madrid">
-      <img src="images/madrid.jpg" alt "madrid">
-      <h1>Madrid</h1>
-    </div>
-    <div class="preview rome">
-      <img src="images/rome.jpg" alt "rome">
-      <h1>Rome</h1>
-    </div>
-  </section>
-</body>
-</html>
- */
-
-
-/*.container {
-  display: grid;
-  grid-template-columns: 50em;
-  font-color: white;
-}
-
-img {
-  width: 30%;
-
-  margin: 1%;
-}
-
-container {
-  display: flex;
-  flex-wrap:wrap;
-}
-
-#titles {
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    margin-left: 1.66%;
-    font-size: 1em;
-
-}
-
-h1 > {
-  font-family: normal;
-  margin-left: 6%;
-  font-size: 1.5em;
-}
-*/
-
-
-/*
+/*margin-left: 10em;
+margin-right: 10em;
