@@ -100,6 +100,63 @@ background-image: url("../images/rome.jpg")
   }
 }
  */
+
+ /*
+*, {
+  box-sizing: border-box;
+}
+head {
+  display: none;
+}
+body {
+  background-color: green;
+  font-family: normal;
+  font-size: 1em;
+}
+
+/* the stuff contained... yes... *
+.container {
+  background-color: red;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container > h1 {
+  font-family: 'Open Sans Serif', sans-serif;
+  background-color: blue;
+  padding: 3em;
+  text-transform: uppercase;
+}
+
+/* TEXT IN IMAGES *
+.preview {
+  height: 200px;
+  display: inline-block;
+  width: 100%;
+  background-size: cover;
+  margin: 0 auto;
+  text-align: left;
+  padding: 1em;
+}
+
+/* IMAGES *
+.baku {
+  background-image: url("../images/baku.jpg")
+}
+
+.london {
+  background-image: url("../images/london.png")
+}
+
+.madrid {
+  background-image: url("../images/madrid.jpg")
+}
+
+.rome {
+  background-image: url("../images/rome.jpg")
+}
+
 * {
   box-sizing: border-box;
 }
@@ -116,13 +173,12 @@ body {
   background-color: red;
   text-align: center;
   margin: 0 auto;
-  width: 100%;
 }
 
 .container > h1 {
   font-family: 'Open Sans Serif', sans-serif;
   background-color: blue;
-  padding: 3em;
+  padding: 1em;
   text-transform: uppercase;
 }
 
@@ -130,7 +186,7 @@ body {
 .preview {
   height: 200px;
   display: inline-block;
-  /*width: 100%;*/
+  width: 100%;
   background-size: cover;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -154,32 +210,91 @@ body {
 .rome {
   background-image: url("../images/rome.jpg")
 }
+/*
 
-/* iphone */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    .preview {
-    width: 100%;
-    flex-flow: column;
-  }
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+*/
+
+/
+@media (min-width: 1281px) {
+.preview {
+  width: 100%;
 }
 
 /* ipad */
 @media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
+and (min-width : 768px)
+and (max-width : 1281px)
 and (orientation : portrait) {
   .preview {
   width: 40%;
-  flex-flow: row;
   }
 }
 
+/* iphone */
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 768px) {
+    .preview {
+    width: 20%;
+    flex-flow: column;
+  }
+}
 
-/* ----------- Retina Screens ----------- 
+/*
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+/*
+@media (min-width: 1281px)
+and (orientation: portrait) {
+  .preview {
+    width: 100%;
+  }
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+/*
+@media (min-width: 1025px) and (max-width: 1280px)
+and (orientation: portrait) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+/*
+@media (min-width: 768px) and (max-width: 1024px)
+and (orientation: portrait) {
+
+  //CSS
+
+}
+
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+/*
+@media (min-width: 320px) and (max-width: 480px) {
+
+  //CSS
+
+}
+/* ----------- Retina Screens -----------
 @media screen
   and (min-device-width: 1200px)
   and (max-device-width: 1600px)
